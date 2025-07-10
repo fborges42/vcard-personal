@@ -331,9 +331,10 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
+.avatar-box img {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .info-content .name {
@@ -1333,7 +1334,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 100%; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1879,4 +1880,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+.download-contact .contact-item {
+  background-color: #3e64ff10;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(62, 100, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-contact .contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(62, 100, 255, 0.3);
+}
+
+/* Optional: colorize the icon box */
+.download-contact .icon-box {
+  background-color: #3e64ff10;
+  color: #3e64ff;
+  transition: background-color 0.2s ease;
+}
+
+.download-contact .contact-title {
+  color: #3e64ff;
+  font-weight: 600;
 }
